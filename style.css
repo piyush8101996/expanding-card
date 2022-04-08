@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    width: 90vw;
+    display: flex;
+}
+.panel {
+    background-size:auto 100%;
+    height: 80vh;
+    border-radius:60px;
+    margin: 10px;
+    flex:0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    position: absolute;
+    bottom:20px ;
+    font-size: 20px;
+    left:20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+  opacity: 1;
+    
+}
